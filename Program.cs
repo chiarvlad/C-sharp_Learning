@@ -27,6 +27,8 @@ namespace myApp
            Console.WriteLine($"The name of the new person is {Vlad.getFullName()}");
            Console.WriteLine(Vlad.test);
         
+           Console.WriteLine("second commit test");
+
            
         }
     }

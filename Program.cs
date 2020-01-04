@@ -2,6 +2,8 @@
 using static System.Console;
 namespace myApp
 {
+    class Program
+    {
     public class ParentClass 
     {
         string parentString;
@@ -31,8 +33,8 @@ namespace myApp
         {
             WriteLine("This is a ChildClass Method");
         }
-
-    public static void Main()
+    }
+    static void Main()
     {
         ChildClass c1 = new ChildClass();
 
@@ -40,5 +42,6 @@ namespace myApp
         c1.ParentPrint();
         ReadLine();
     }
+    
     }
 }

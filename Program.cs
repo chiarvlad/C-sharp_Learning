@@ -25,11 +25,8 @@ namespace myApp
 
     public class ChildClass : ParentClass
     {
-        public ChildClass() : base ("Some String")
-        {
-            WriteLine("This is a ChildClass constructor.");
-        }
-    
+        public ChildClass() : base("Some String") => WriteLine("This is a ChildClass constructor.");
+
         public void ChildPrint()
         {
             WriteLine("This is a ChildClass Method");

@@ -10,7 +10,7 @@ namespace myApp
         }
         public void PrintMe()
         {
-            WriteLine("This is a ParentClass method.");
+            WriteLine("This is a ParentClass Method.");
         }
     }
 

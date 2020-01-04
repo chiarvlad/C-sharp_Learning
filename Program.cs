@@ -4,11 +4,20 @@ namespace myApp
 {
     public class ParentClass 
     {
+        string parentString;
+
         public ParentClass()
         {
             WriteLine("This is a ParentClass constructor.");
         }
-        public void PrintMe()
+
+        public ParentClass(string myString)
+        {
+            parentString = myString;
+            WriteLine("This is an overload ParentClass constructor");
+            WriteLine($"Set the ParentClass.parentString to {parentString}.");
+        }
+        public void ParentPrint()
         {
             WriteLine("This is a ParentClass Method.");
         }
@@ -16,17 +25,22 @@ namespace myApp
 
     public class ChildClass : ParentClass
     {
-        public ChildClass()
+        public ChildClass() : base ("Some String")
         {
             WriteLine("This is a ChildClass constructor.");
         }
     
+        public void ChildPrint()
+        {
+            WriteLine("This is a ChildClass Method");
+        }
 
     public static void Main()
     {
         ChildClass c1 = new ChildClass();
 
-        c1.PrintMe();
+        c1.ChildPrint();
+        c1.ParentPrint();
         ReadLine();
     }
     }

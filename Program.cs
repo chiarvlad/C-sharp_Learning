@@ -1,32 +1,33 @@
 ﻿using System;
-
+using static System.Console;
 namespace myApp
 {
-    class Program
+    public class ParentClass 
     {
-        class Person
+        public ParentClass()
         {
-            private string firstName;
-            private string lastName;
-            public string test = "public variable";
-
-            public Person(string First, string Last)
-            {
-                Console.WriteLine("A new person is created");
-                firstName = First;
-                lastName = Last;
-            }
-
-            public string getFullName() => (firstName + " " + lastName);
+            WriteLine("This is a ParentClass constructor.");
         }
-        static void Main(string[] args)
+        public void PrintMe()
         {
-           Console.WriteLine("Hello!");
-
-           Person Vlad = new Person("Vlad", "Anastasiei");
-           Console.WriteLine($"The name of the new person is {Vlad.getFullName()}");
-           Console.WriteLine(Vlad.test);
-        
+            WriteLine("This is a ParentClass method.");
         }
+    }
+
+    public class ChildClass : ParentClass
+    {
+        public ChildClass()
+        {
+            WriteLine("This is a ChildClass constructor.");
+        }
+    
+
+    public static void Main()
+    {
+        ChildClass c1 = new ChildClass();
+
+        c1.PrintMe();
+        ReadLine();
+    }
     }
 }

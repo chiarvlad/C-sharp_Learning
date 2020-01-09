@@ -8,8 +8,15 @@ namespace myApp
     {
         private string BaseOuput = null;
 
+        public ParentClass ()
+        {
+            WriteLine("A ParentClass object is created w/out data properties.");
+           
+        }
+
         public ParentClass (string ParentString)
         {
+            WriteLine("A ParentClass object is created w/ data properties.");
             BaseOuput = ParentString;
         }
 
@@ -23,7 +30,7 @@ namespace myApp
     {
        private string DerivedOutput = null;
 
-       public ChildClass (string ParentString, string ChildString) : base(ParentString)
+       public ChildClass (ParentClass Parent, string ChildString) : base()
        {
            DerivedOutput = ChildString;
        }
@@ -37,7 +44,7 @@ namespace myApp
         static void Main()
         {
             ParentClass theParent = new ParentClass("Text for ParentClass");
-            ChildClass theChild = new ChildClass("Parent String", "Text for ChildClass");
+            ChildClass theChild = new ChildClass(Parent: theParent, "Text for ChildClass");
 
             theParent.ParentPrintLine();
             theChild.ParentPrintLine();

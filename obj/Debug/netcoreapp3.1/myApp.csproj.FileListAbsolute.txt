@@ -9,3 +9,14 @@ D:\myApp\obj\Debug\netcoreapp3.1\myApp.AssemblyInfoInputs.cache
 D:\myApp\obj\Debug\netcoreapp3.1\myApp.AssemblyInfo.cs
 D:\myApp\obj\Debug\netcoreapp3.1\myApp.dll
 D:\myApp\obj\Debug\netcoreapp3.1\myApp.pdb
+D:\___C-Sharp\myApp\bin\Debug\netcoreapp3.1\myApp.exe
+D:\___C-Sharp\myApp\bin\Debug\netcoreapp3.1\myApp.deps.json
+D:\___C-Sharp\myApp\bin\Debug\netcoreapp3.1\myApp.runtimeconfig.json
+D:\___C-Sharp\myApp\bin\Debug\netcoreapp3.1\myApp.runtimeconfig.dev.json
+D:\___C-Sharp\myApp\bin\Debug\netcoreapp3.1\myApp.dll
+D:\___C-Sharp\myApp\bin\Debug\netcoreapp3.1\myApp.pdb
+D:\___C-Sharp\myApp\obj\Debug\netcoreapp3.1\myApp.csprojAssemblyReference.cache
+D:\___C-Sharp\myApp\obj\Debug\netcoreapp3.1\myApp.AssemblyInfoInputs.cache
+D:\___C-Sharp\myApp\obj\Debug\netcoreapp3.1\myApp.AssemblyInfo.cs
+D:\___C-Sharp\myApp\obj\Debug\netcoreapp3.1\myApp.dll
+D:\___C-Sharp\myApp\obj\Debug\netcoreapp3.1\myApp.pdb

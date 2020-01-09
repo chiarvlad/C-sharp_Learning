@@ -6,42 +6,45 @@ namespace myApp
     {
     public class ParentClass 
     {
-        string parentString;
+        private string BaseOuput = null;
 
-        public ParentClass()
+        public ParentClass (string ParentString)
         {
-            WriteLine("This is a ParentClass constructor.");
+            BaseOuput = ParentString;
         }
 
-        public ParentClass(string myString)
+        public void ParentPrintLine()
         {
-            parentString = myString;
-            WriteLine("This is an overload ParentClass constructor");
-            WriteLine($"Set the ParentClass.parentString to {parentString}.");
-        }
-        public void ParentPrint()
-        {
-            WriteLine("This is a ParentClass Method.");
+            WriteLine(BaseOuput);
         }
     }
 
     public class ChildClass : ParentClass
     {
-        public ChildClass() : base("Some String") => WriteLine("This is a ChildClass constructor.");
+       private string DerivedOutput = null;
 
-        public void ChildPrint()
+       public ChildClass (string ParentString, string ChildString) : base(ParentString)
+       {
+           DerivedOutput = ChildString;
+       }
+
+       public void ChildPrintLine()
+       {
+           WriteLine(DerivedOutput);
+       }
+    }
+
+        static void Main()
         {
-            WriteLine("This is a ChildClass Method");
-        }
-    }
-    static void Main()
-    {
-        ChildClass c1 = new ChildClass();
+            ParentClass theParent = new ParentClass("Text for ParentClass");
+            ChildClass theChild = new ChildClass("Parent String", "Text for ChildClass");
 
-        c1.ChildPrint();
-        c1.ParentPrint();
-        ReadLine();
-    }
+            theParent.ParentPrintLine();
+            theChild.ParentPrintLine();
+            theChild.ChildPrintLine();
+
+        }
+    
     
     }
 }
